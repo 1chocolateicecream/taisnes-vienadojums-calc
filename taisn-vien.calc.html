@@ -21,6 +21,21 @@
       let y2 = document.getElementById("y2");
       let solveBtn = document.getElementById("solveBtn");
       let resultFormula = document.getElementById("resultFormula");
+
+      function handleClick() {
+        const xx1 = parseFloat(x1.value);
+        const xx2 = parseFloat(x2.value);
+        const yy1 = parseFloat(y1.value);
+        const yy2 = parseFloat(y2.value);
+
+        let k = (yy2 - yy1) / (xx2 - xx1);
+
+        let b = yy1 - k * xx1;
+
+        resultFormula.textContent = `y = ${k}x + ${b}`;
+      }
+
+      solveBtn.addEventListener("click", handleClick);
     </script>
   </body>
 </html>
