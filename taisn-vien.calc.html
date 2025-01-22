@@ -32,7 +32,11 @@
 
         let b = yy1 - k * xx1;
 
-        resultFormula.textContent = `y = ${k}x + ${b}`;
+        if (b > 0) {
+          resultFormula.textContent = `y = ${k}x + ${b}`;
+        } else {
+          resultFormula.textContent = `y = ${k}x ${b}`;
+        }
       }
 
       solveBtn.addEventListener("click", handleClick);
