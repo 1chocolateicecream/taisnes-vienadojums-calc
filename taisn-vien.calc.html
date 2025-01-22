@@ -7,16 +7,20 @@
   </head>
   <body>
     <h1>Taisnes vienādojums</h1>
-    <p>Punksts A = (</p>
-    <input type="number" id="x1" placeholder="-2" />
-    <p>;</p>
-    <input type="number" id="y1" placeholder="8" />
-    <p>)</p>
-    <p>Punksts B = (</p>
-    <input type="number" id="x2" placeholder="0" />
-    <p>;</p>
-    <input type="number" id="y2" placeholder="2" />
-    <p>)</p>
+    Punksts A = ( <input type="number" id="x1" placeholder="-2" /> ;
+    <input type="number" id="y1" placeholder="8" /> )<br />
+    Punksts B = ( <input type="number" id="x2" placeholder="0" /> ;
+    <input type="number" id="y2" placeholder="2" /> )<br />
     <button id="solveBtn">Analizēt</button>
+    <p id="resultFormula">y = kx + b</p>
+
+    <script>
+      let x1 = document.getElementById("x1");
+      let x2 = document.getElementById("x2");
+      let y1 = document.getElementById("y1");
+      let y2 = document.getElementById("y2");
+      let solveBtn = document.getElementById("solveBtn");
+      let resultFormula = document.getElementById("resultFormula");
+    </script>
   </body>
 </html>
